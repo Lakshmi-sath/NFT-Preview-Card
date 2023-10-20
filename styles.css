@@ -1,0 +1,123 @@
+:root {
+  --cyan: hsl(178, 100%, 50%);
+  --soft-blue: hsl(215, 51%, 70%);
+
+  --very-dark-blue-main-bg: hsl(217, 54%, 11%);
+  --very-dark-blue-main-shadow-1: hsl(217, 57%, 12%);
+  --very-dark-blue-main-shadow-2: hsl(216, 52%, 11%);
+  --very-dark-blue-card-bg: hsl(216, 50%, 16%);
+  --vary-dark-blue-line: hsl(215, 32%, 27%);
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--very-dark-blue-main-bg);
+  font-family: "Outfit", sans-serif;
+}
+
+.bg-shadow-1 {
+  margin-top: -2rem;
+  margin-left: 37rem;
+  width: 22rem;
+  height: 35rem;
+  background-color: var(--very-dark-blue-main-shadow-1);
+  position: absolute;
+  z-index: -1;
+  opacity: 0.6;
+  border-radius: 1rem;
+}
+
+.bg-shadow-2 {
+  margin-top: 2rem;
+  margin-left: 38.5rem;
+  width: 19rem;
+  height: 28rem;
+  background-color: var(--very-dark-blue-main-shadow-2);
+  position: absolute;
+  z-index: -1;
+  border-radius: 1rem;
+}
+
+section {
+  margin: auto;
+  width: 15rem;
+  background-color: var(--very-dark-blue-card-bg);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 7rem;
+  /* box-shadow: 0 0 10px 10px black; */
+}
+
+h1 {
+  font-size: 1rem;
+  color: white;
+  padding: 1rem 0 1rem 0;
+}
+
+picture img{
+  width: 15rem;
+  border-radius: 0.5rem;
+}
+
+p {
+  font-size: 0.9rem;
+  color: var(--soft-blue);
+}
+
+.measurements {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 1rem 0 1rem 0;
+  font-weight: 300;
+}
+
+.eth-div {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0;
+}
+
+.eth-div p {
+  color: var(--cyan);
+}
+
+.days-div {
+  display: flex;
+  gap: 0.5rem;
+  color: var(--soft-blue);
+}
+
+.line {
+  border: 1px solid var(--vary-dark-blue-line);
+  margin-bottom: 0.6rem;
+  opacity: 0.4;
+}
+
+.profile {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.profile img {
+  width: 1.5rem;
+  background-color: white;
+  border-radius: 50%;
+  padding: 0.02rem;
+}
+
+.creation {
+  font-size: 0.8rem;
+  color: var(--soft-blue);
+}
+
+.profile-name {
+  font-size: 0.8rem;
+  color: white;
+}
